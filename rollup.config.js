@@ -7,12 +7,12 @@ export default {
 	entry: 'app/main.js',
 	dest: 'bundle.js',
 	plugins: [
-		nodeResolve({jsnext: true}),
+    nodeResolve({jsnext: true}),
     commonjs({
       include: 'node_modules/**',
       sourceMap: false
     }),
-		jsx({factory: 'React.createElement'})
-	],
-	sourceMap: true
+    jsx({factory: 'React.createElement'})
+  ],
+  sourceMap: true
 }
