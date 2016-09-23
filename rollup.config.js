@@ -4,9 +4,9 @@ import commonjs from 'rollup-plugin-commonjs';
 
 
 export default {
-	entry: 'app/main.js',
-	dest: 'bundle.js',
-	plugins: [
+  entry: 'app/main.js',
+  dest: 'bundle.js',
+  plugins: [
     nodeResolve({jsnext: true}),
     commonjs({
       include: 'node_modules/**',
